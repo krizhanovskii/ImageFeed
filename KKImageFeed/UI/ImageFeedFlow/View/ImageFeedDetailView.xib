@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageFeedDetailView" customModule="KKImageFeed" customModuleProvider="target">
+            <connections>
+                <outlet property="imageViewContent" destination="Xkc-XT-6SF" id="dbT-h7-5DR"/>
+                <outlet property="lblInfo" destination="UAB-q7-hdj" id="ifX-o5-M2o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xkc-XT-6SF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Xkc-XT-6SF" secondAttribute="height" multiplier="1:1" id="cRl-UP-w8o"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAB-q7-hdj">
+                    <rect key="frame" x="10" y="385" width="40" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xkc-XT-6SF" secondAttribute="trailing" id="BqZ-y6-4f4"/>
+                <constraint firstItem="Xkc-XT-6SF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bsd-vG-bsJ"/>
+                <constraint firstItem="UAB-q7-hdj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Hvc-fb-eCv"/>
+                <constraint firstItem="Xkc-XT-6SF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="P2G-TR-TYk"/>
+                <constraint firstItem="UAB-q7-hdj" firstAttribute="top" secondItem="Xkc-XT-6SF" secondAttribute="bottom" constant="10" id="qeT-2Q-vjY"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

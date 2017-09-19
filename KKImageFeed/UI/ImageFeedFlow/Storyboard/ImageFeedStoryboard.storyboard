@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VIs-Rj-xmZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Feed Cntrl-->
+        <scene sceneID="BnM-ZV-nnX">
+            <objects>
+                <viewController id="VIs-Rj-xmZ" customClass="ImageFeedCntrl" customModule="KKImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VeM-4w-3SI"/>
+                        <viewControllerLayoutGuide type="bottom" id="jj5-tk-H8f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sUp-Ax-NqR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9AM-2u-Fum" customClass="ImageFeedView" customModule="KKImageFeed" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9AM-2u-Fum" firstAttribute="leading" secondItem="sUp-Ax-NqR" secondAttribute="leading" id="7Mj-fC-SV2"/>
+                            <constraint firstAttribute="trailing" secondItem="9AM-2u-Fum" secondAttribute="trailing" id="bGd-oc-Gtb"/>
+                            <constraint firstItem="9AM-2u-Fum" firstAttribute="top" secondItem="sUp-Ax-NqR" secondAttribute="top" id="hyW-XV-6Op"/>
+                            <constraint firstItem="jj5-tk-H8f" firstAttribute="top" secondItem="9AM-2u-Fum" secondAttribute="bottom" id="oTh-Ik-qZb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewContent" destination="9AM-2u-Fum" id="P6y-RS-oxW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHk-6Q-8Yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="136"/>
+        </scene>
+    </scenes>
+</document>
