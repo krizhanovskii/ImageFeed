@@ -8,6 +8,5 @@ target 'KKImageFeed' do
   # Pods for KKImageFeed
   pod 'Kingfisher', '~> 3.0'
   pod ‘SWSkelethon’
-  pod 'Agrume', :git => 'https://github.com/JanGorman/Agrume.git'
 	
 end
